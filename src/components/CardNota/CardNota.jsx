@@ -11,7 +11,8 @@ class CardNota extends Component {
     return (
       <section className="card-nota">
         <header className="card-nota_cabecalho">
-          <h3 className="card-nota_titulo">{this.props.titulo}</h3>
+          <h4 className="bloco" >{this.props.categoria}</h4>
+          <h3  className="card-nota_titulo bloco">{this.props.titulo}</h3>
           <button onClick={this.apagar.bind(this)}>Excluir</button>
         </header>
         <p className="card-nota_texto">{this.props.texto}</p>
